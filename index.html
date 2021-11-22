@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Landing Page</title>
+
+  <!-- text-standard över webben --> 
+  <meta charset="utf-8">
+
+  <!-- behövs för att få en responsiv hemsida och för att känna om hemsidan koms åt av 
+  mindre skärmar som ex. plattor och telefoner-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+
+<!-- css fil som vi länkar till för socail media ikonerna, font awesome ikoner -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<!-- all css kommer vara här --> 
+  <style>
+
+
+p{
+	font-size: 120%;
+}
+
+body{
+
+
+
+    font-family: 'Vollkorn SC', serif;
+
+
+}
+
+.navbar {
+
+margin-bottom:0;
+border-radius:0;
+background-color: #5E4485;
+color:#FFF;
+padding: 1% 0;
+font-size: 1.2em;
+border:0;
+}
+
+/* For the logo*/
+.navbar-brand{
+float: left;
+min-height: 55px;
+padding: 12px 1px 15px 10px;
+
+
+}
+
+.carousel-caption{
+	top:50%;
+	transform:translateY(-25%);
+	text-transform: uppercase;
+	color: white;
+	 
+
+}
+
+
+
+
+.carousel-caption h1{
+	border-radius: 1px;
+	background-color: #5E4485;
+	padding: 1% 1% 1% 1%;
+	text-shadow: 2px 2px black;
+	box-shadow: 5px 5px 5px black;
+	opacity: 0.9;
+}
+
+.carousel-caption h1:hover{
+
+
+}
+
+
+.btn{
+	font-size: 18px;
+
+	color:#FFF;
+	/*top bottom, right left. */
+	padding: 12px 22px;
+	background:#5E4485;
+	border:2px solid #FFF;
+
+}
+
+
+
+
+
+
+
+
+/* ".navbar-inverse" is the entire navigation bar block, ".navbar-nav" are the specific navigation buttons */
+							/* so that the target links change color when they are focused or hovered on*/
+.navbar-inverse .navbar-nav .active a,.navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+	color: #FFF;
+	background-color: #5E4485;
+
+}
+
+
+/* the color on the links when not "a:hover" or "a:focus"; */
+.navbar-inverse .navbar-nav li a {
+	color: #D5D5D5;
+
+}
+
+
+.container{
+margin: 4% auto;
+
+}
+
+
+
+#icon{
+	max-width: 200px;
+	/* 1% on top and bottom, auto on left&right to center it */
+	margin:1% auto;
+	}
+
+	footer{
+		width: 100%;
+		background-color: #5E4485;
+		padding: 5%;
+		color:#FFF;
+
+
+	}
+
+	video {
+    position:relative;
+    z-index:-1;
+}
+
+.video_text{
+
+	 position:relative;
+    z-index: 1;
+    background-color: brown;
+    
+}
+
+	.fa{
+
+		padding: 10px;
+		font-size: 25px;
+		color: #FFF;
+	}
+
+	.fa:hover{
+		color: #D5D5D5;
+		text-decoration: none;
+		transition: 0.2s;
+	}
+
+
+.hiddenH4 a{
+	text-decoration: none;
+	transition: 0.2s;
+
+}
+.hiddenH4 a:hoover{
+	text-decoration: none;
+	transition: 0.2s;
+
+}
+.icon-bar:hover{
+transition: 0.2s;
+}
+
+
+/* for the portfolio images*/
+.thumbnail:hover {
+   opacity: 0.7;
+   transition: 0.2s;
+}
+
+
+h1{
+	font-size: 250%;
+	vertical-align: center;
+}
+
+
+
+.kontaktaOss{
+	margin-top: 50px;
+	transition: 0.2s;
+
+
+}
+
+.merommig{
+
+padding-left: 2%; 
+padding-right: 2%;
+}
+
+
+.slider_box{
+background-color: #5E4485;
+	box-shadow: 5px 5px 5px black; 
+	padding: 0;
+	margin:auto;
+	text-align: center;
+
+}
+
+
+
+.carousel-inner img {
+
+	height: 50%;
+}
+
+
+@media (max-width: 1000px){
+
+h1{
+	font-size: 200%;
+}
+
+}
+
+@media (max-width: 768px){
+.fa{
+
+	font-size: 20px;
+	padding:10px;
+	}
+}
+
+
+/* activates when width is less than 600px*/ 
+@media (max-width: 768px){
+	
+	.carousel-caption{
+		display:none;
+	}
+
+.caption_outside_text{
+
+
+}
+
+
+
+	#icon {
+		max-width: 150px;
+	}
+
+
+h2{
+		font-size: 1.9em;
+	
+	}
+
+}
+
+@media (max-width: 768px){
+
+.box{
+	background-color: #5E4485;
+	box-shadow: 5px 5px 5px black; 
+	padding: 0;
+	margin:auto;
+	}
+
+.box h4{
+		
+		color:#D5D5D5;
+	}
+
+}
+
+
+
+  </style>
+
+
+
+</head>
+<body>
+						<!--refererar till arvsklasser kopplade till bootstrap -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+			
+			<!-- container-fluid gör så att det fylls ut till hela bredden--> 
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+
+
+					<!-- the button is for the mobile version, pop-up menu, "navbar-toggle" class is for the button to be a menu, "data-toggle='collapse'" so the menu opens and closes. "data-target"-class connects the button to the pop up menu further down --> 
+					<button type="button" class = "navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						
+					<!-- here are the icon bars that appear inside the navigation button,
+					three are standard for menu button-->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+
+
+
+					</button>
+					<a class="navbar-brand" href="#">
+					<img src="img/logo.png">
+					</a>
+					</div>
+
+						<!-- connects the menu to the , felet var innan fel id. -->
+					<div class="collapse navbar-collapse" id ="myNavbar">
+						
+							<!-- right because you want to display it to the right--> 
+							<ul class="nav navbar-nav navbar-right">
+									<!-- sets the active on Home when starting by default-->
+								<li class="active"><a href="#hem">hem</a></li>
+								<li> <a href="#omoss">Om oss</a></li>
+								<li> <a href="#tjanster">Våra Tjänster</a></li>
+								<li> <a href="#portfolio">Portfolio</a></li>
+								<li> <a href="#kontaktaoss">Kontakta oss</a></li>
+					</div>
+
+			</div> <!-- end of  container-fluid --> 
+	</nav>
+
+
+
+
+	
+		<!-- IMAGE SLIDING START-->
+<!-- Carousel is of the most popular image sliding toolsets for Bootstrap-->
+	<div id ="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+
+			<!-- first list item to activate when starting-->
+			<li data-target = "#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target = "#myCarousel" data-slide-to="1" ></li>
+			<li data-target = "#myCarousel" data-slide-to="2" ></li>
+		</ol>
+
+
+		<div class="carousel-inner" role ="listbox" >
+			<div class="item active">
+				<img src= "img/office6.png">
+
+					<div class="slider_box">
+				<div class="carousel-caption">
+					<span class="bg-info"><h1>Har du idén om den där perfekta appen eller hemsidan men vet inte var du ska börja?</h1></span>
+					</div>
+					</div>
+
+					
+
+				
+			</div> <!-- end active --> 
+
+			<div class="item">
+			<img src="img/office2.png">
+				<div class="carousel-caption">
+					<span class="bg-info"><h1>Driver du redan ett företag men skulle vilja ta det till nästa nivå?</h1></span>
+				</div>
+					
+
+
+
+			</div>
+
+			<div class="item">
+			<img src="img/office3.png">
+				<div class="carousel-caption">
+					<span class="bg-info"><h1> På Strategic Consulting erbjuder vi  lösningar anpassat efter dina behov.</h1></span>
+					
+				</div>
+					
+
+			</div>
+
+		</div>
+			<!-- start of slide controls (arrows)  carousel-control is for --> 
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<!-- the icon in place of the button-->
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<!-- the icon in place of the button-->
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">next</span>
+				</a>
+
+	</div> <!-- End of carousel --> 
+
+
+	<div class="container text-center hidden-sm hidden-md hidden-lg">
+		<h2> En app idé? </h2>
+
+		<h2> Eller kanske en ide om en hemsida?</h2>
+
+		<h2>  På Strategic Consulting erbjuder vi lösningar anpassade efter dina önskemål och behov.</h2>
+
+	</div>
+
+
+  <!-- 1. change to col-sm-3 , and then at xs make the images hidden, "xs-hidden" i belive it was-->
+
+		<div class="container text-center">
+			<h2>Vi använder: </h2>
+				<div class="row box">
+						<!-- "col-sm-4" takes up about one third of the screen,
+						The columns will automatically stack on top of each other 
+						when the screen is less than 768px wide. 12col is full width in bootstrap grid systems. 
+						-->
+					<div class="col-sm-4">
+						<img src="img/html5.png" class="hidden-xs" id ="icon">
+						<h4>HTML5</h4>
+					</div>
+
+					
+					<div class="col-sm-4">
+						<img src="img/bootstrap.png" class="hidden-xs" id ="icon">
+						<h4>Bootstrap</h4>
+					</div>
+
+					
+					<div class="col-sm-4">
+						<img src="img/css3.png" class="hidden-xs" id ="icon">
+						<h4>CSS3</h4>  
+					</div>
+
+
+ 
+				</div> <!-- end of row --> 
+
+		</div> <!-- end of logos-->
+
+
+<!-- NÄSTA MED LOGGOR-->
+		<!-- regular container is more centered to 70% of the width-->
+		<div class="container text-center">
+				<div class="row box">
+					
+					<div class="col-sm-4">
+						<img src="img/js.png" class="hidden-xs" id ="icon">
+						<h4>Javascript</h4>
+					</div>
+
+					
+					<div class="col-sm-4">
+						<img src="img/UE4.png" class="hidden-xs" id ="icon">
+						<h4>Unreal 4</h4>
+					</div>
+
+					
+					<div class="col-sm-4">
+						<img src="img/wordpress.png" class="hidden-xs" id ="icon">
+						<h4>Wordpress</h4>
+					</div>
+
+
+
+				</div>
+
+		</div> <!-- end of logos-->
+
+
+		<div class="container text-center">
+				<div class="row box">
+					
+					<div class="col-sm-4">
+						<img src="img/android.png" class="hidden-xs" id ="icon">
+						<h4>Android Studio</h4>
+					</div>
+
+					
+					<div class="col-sm-4">
+						<img src="img/java.png" class="hidden-xs" id ="icon">
+						<h4>Java</h4>
+					</div>
+
+					
+					<div class="col-sm-4">
+						<img src="img/php.png" class="hidden-xs" id ="icon">
+						<h4>PHP</h4>
+					</div>
+
+
+
+				</div>
+					<h2>För att realisera dina mål.</h2>
+		</div> <!-- end of logos-->
+
+
+
+		<div class="container">
+			<div class="row">
+				
+			<div class="col-md-6" id ="omoss">
+				<h4> <strong> Vad behöver du hjälp med? </strong></h4> 
+					<p>Vi kan hjälpa dig med att bygga en applikation eller en hemsida, eller kanske har du redan en app eller hemsida som du skulle vilja bygga vidare på eller modifiera? Likaväl kan vi göra konsultarbete om du behöver hjälp med ett projekt av teknisk natur men känner att du inte vet hur du ska strukturera, planera eller genomföra projektet? </p>
+
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Du är mer än välkommen att gå igenom vår portfolio och se om det går att </p>
+			</div>
+			
+
+			<!-- fix scaling issue -->
+			<div class="col-md-6 bootImage">
+				<img src="img/shades.png" class="img-responsive">
+			</div>
+
+			</div>
+
+		</div>
+
+
+
+
+<!-- start of portfolio --> 
+		<div class="container text-center" id="portfolio">
+			
+				<h4>Vår kund-portfolio:</h4>
+
+			<div class="portfolio_box row">
+
+					<div class="col-md-4 col-sm-4 col-xs-4 thumbnail">
+
+					 <img src="img/octupus.png">
+
+					</div>
+
+
+					<div class="col-md-4 col-sm-4 col-xs-4 thumbnail">
+						<img src="img/opera.png">
+					</div>
+
+
+					<div class="col-md-4 col-sm-4 col-xs-4 thumbnail">
+						<img src="img/kaikoura.png">
+					</div>
+
+			</div>
+
+		</div>
+
+<!-- end of portfolio -->
+
+
+		<div class="container">
+			<!-- .row makes sure the content is properly alligned down the left side-->
+			<div class="row">
+				
+				<!-- when small screen size (sm), col goes up to 6, otherwise its 3 on medium(md) and large(lg) size -->
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4><strong> Varför oss? </strong></h4>
+					<p>Det som utmärker vår byrå är att vi är tillräckligt stora och erfarna för att ditt projekt ska känna sig i trygga händer, men samtidigt tillräckligt små för att servicen ska bli personlig och att du inte ska bli "en i mängden".</p>
+					
+			</div>
+			
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+				<img src="img/sass.png" id ="icon" class="img-responsive">
+			</div>
+
+
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<h4> <strong> När börjar vi?</strong> </h4>
+					<p>Känner du dig manad att äntligen sätta igång med ditt projekt? Eller har du kanske bara frågor eller funderingar? Tveka isåfall inte till att höra av dig. </p>
+					
+			</div>
+			
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<img src="img/less.png" id ="icon" class="img-responsive">
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+	<div class="container">
+			<div class="row">
+				
+				<h4 class="hiddenH4 text-center"> <a href="#hidden" data-toggle="collapse">Vilka är Software Consulting?</a></h4>
+
+				<div id="hidden" class="collapse row">
+					
+					<div class="col-md-6 col-xs-12">
+					<h4 style="padding-left: 3%; padding-right: 2%;"> <strong>  Mer Om mig: </strong></h4>
+					<p style="padding-left: 3%; padding-right: 2%;"> Mitt namn är Kristian Andreas Boban och är en webbutvecklare, utöver att bygga din hemsida så kan jag hjälpa dig med SEO-optimering och Marknadsanalyser.  </p>
+
+					</div>
+
+					<div class="col-md-6 col-xs-12">
+								<!-- fb-profile image -->
+					<img class="img-responsive" style="padding-left: 2%; padding-right: 2%;" src="https://scontent.farn2-1.fna.fbcdn.net/v/t1.0-9/44193_427320706900_1010869_n.jpg?oh=743aadb4f6fd040626e6b74530391717&oe=5A9AE348">
+					</div>
+					
+
+			</div>
+
+		</div>		
+		
+	</div>
+	<!-- stretches all the width, centers text-->
+
+
+
+
+<footer class="container-fluid text-center">
+	
+		<div class="row">
+			<div class="col-sm-4">
+
+
+				<!-- modal import start here-->
+
+					
+					  
+					  <!-- Trigger the modal with a button -->
+					  <button type="button" class="btn btn-info btn-lg kontaktaOss" data-toggle="modal" data-target="#myModal">Kontakta Oss</button>
+
+					  <!-- Modal -->
+					  <div class="modal fade" id="myModal" role="dialog">
+					    <div class="modal-dialog">
+					    
+					      <!-- Modal content-->
+					      <div class="modal-content">
+					        <div class="modal-header">
+					          <button type="button" class="close" data-dismiss="modal">&times;</button>
+					           <h4 class="modal-title">Skicka ett Meddelande</h4>  
+					        </div>
+					        <div class="modal-body">
+
+
+					        <!-- Import Login-form begins -->
+								<form>
+							    <div class="form-group">
+							      <label for="usr">Namn:</label>
+
+							      							<!-- form-control är bootstrap class för forms-->
+							      <input type="text" class="form-control" id="usr">
+							    </div>
+							    <div class="form-group">
+							      <label for="pwd">Epostadress:</label>
+							      <input type="password" class="form-control" id="pwd">
+
+
+								  <label for="comment">´kommentarer:</label>
+								  <textarea class="form-control" rows="5" id="comment"></textarea>
+
+							    </div>
+							  </form>
+							  <!-- Import Login-form ends -->	
+
+
+					        </div>
+					        <div class="modal-footer">
+					          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        </div>
+					      </div>
+					      
+					    </div>
+					  </div>
+					
+				<!-- modal import ends here-->
+
+			</div>
+
+
+			<div class="col-sm-4">
+				<h3>Connect</h3>
+
+				<!-- font awesome -->
+				<a href="#" class=" fa fa-facebook"></a>
+				<a href="#" class=" fa fa-twitter"></a>
+				<a href="#" class=" fa fa-google"></a>
+				<a href="#" class=" fa fa-linkedin"></a>
+				<a href="#" class=" fa fa-youtube"></a>
+			</div>
+
+
+			<div class="col-sm-4">
+				<img src="img/bunny.png" class="icon">
+			</div>
+
+
+		</div>
+
+</footer>
+
+
+
+
+		<script type="text/javascript">
+
+				// auto-slide. 
+		  $(document).ready(function() {
+		    $('.carousel').carousel({
+		      interval: 5000,
+		    })
+		 
+		    	
+
+alert("I am an alert box!");
+
+		  });
+
+
+		   
+
+
+		</script>
+
+</body>
+</html>
